@@ -187,7 +187,24 @@
             pointer-events: none;
         }
 
-        @media (prefers-reduced-motion: reduce) {
+        @media (max-width: 768px) {
+        .slide > .content {
+            padding: 1.25rem 1.25rem 2.75rem;
+        }
+        .nav-controls {
+            bottom: 12px;
+            padding: 6px 16px;
+        }
+        .nav-btn {
+            width: 34px;
+            height: 34px;
+        }
+        .content h1, .content h2 {
+            line-height: 1.2;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
@@ -268,7 +285,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-5 reveal">
                 There is real money behind every small improvement in outreach.
             </h2>
-            <div class="grid grid-cols-3 gap-5 text-sm text-text-secondary">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm text-text-secondary">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Massive spend</h3>
                     <p class="text-sm">
@@ -302,7 +319,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-5 reveal">
                 End‑to‑end pipeline from school websites to a hiring‑ready CSV.
             </h2>
-            <div class="grid grid-cols-3 gap-6 text-sm text-text-secondary mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-text-secondary mt-2">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Input</h3>
                     <p><span class="font-semibold">TXT file of school websites.</span><br>For example: one domain per line, focused on the regions or boards you care about.</p>
@@ -340,7 +357,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-5 reveal">
                 Website + PDF extraction that is actually schools‑aware.
             </h2>
-            <div class="grid grid-cols-2 gap-6 text-sm text-text-secondary mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-text-secondary mt-2">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Crawls</h3>
                     <ul class="list-disc pl-5 space-y-2 text-xs">
@@ -372,7 +389,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-4 reveal">
                 Hiring / vacancy‑aware ranking, not just a flat list.
             </h2>
-            <div class="grid grid-cols-2 gap-7 mt-2 text-sm text-text-secondary">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mt-2 text-sm text-text-secondary">
                 <div class="reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Signals used</h3>
                     <ul class="list-disc pl-5 space-y-2 text-xs">
@@ -430,7 +447,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-5 reveal">
                 Designed for schools and hiring context, not generic B2B.
             </h2>
-            <div class="grid grid-cols-2 gap-6 text-sm text-text-secondary mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-text-secondary mt-2">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Schools‑specific vs generic B2B</h3>
                     <p class="text-xs mb-2">
@@ -478,7 +495,7 @@
             <h2 class="font-display text-[clamp(2rem,4.2vw,3rem)] mb-5 reveal">
                 Concrete, transparent pricing that compares well to both tools and manual work.
             </h2>
-            <div class="grid grid-cols-3 gap-6 text-sm text-text-secondary mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-text-secondary mt-2">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Proposed plan</h3>
                     <p class="text-sm mb-2"><span class="font-semibold">Data Pack: 300 school websites &mdash; ₹30,000</span></p>
@@ -500,7 +517,7 @@
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Light comparison</h3>
                     <p class="text-xs">
-                        Hunter / Snov small plans start around <span class="font-semibold">$300–$500/month</span> and up &mdash; great tools, but they:
+                        Hunter / Snov small plans start around <span class="font-semibold">$30–$50/month</span> and up &mdash; great tools, but they:
                     </p>
                     <ul class="list-disc pl-5 space-y-1 text-xs mt-2">
                         <li>Don&apos;t crawl arbitrary school PDFs.</li>
@@ -548,7 +565,7 @@
             <h2 class="font-display text-[clamp(2.2rem,5vw,3.6rem)] mb-4 reveal text-glow glow-pulse">
                 A small, focused pilot backed by direct support from the builder.
             </h2>
-            <div class="grid grid-cols-2 gap-6 max-w-3xl mx-auto text-xs text-text-secondary mt-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto text-xs text-text-secondary mt-2">
                 <div class="bg-glass-bg border border-glass-border rounded-xl p-5 shadow-md text-left reveal">
                     <h3 class="text-xs font-semibold tracking-[0.2em] uppercase text-accent-1 mb-2">Support promise</h3>
                     <ul class="list-disc pl-5 space-y-2">
